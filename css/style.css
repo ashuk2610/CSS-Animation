@@ -1,0 +1,92 @@
+/* Css Reset  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* some properties to center the content  */
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/*  [- Circle -] css section  */
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 15px solid red;
+  border-radius: 50%;
+  animation-name: circle;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+/* Circle animation starts here  */
+
+@keyframes circle {
+  0% {
+    border: 15px solid red;
+    transform: scale(1);
+  }
+  25% {
+    border: 15px solid gold;
+    transform: scale(1.1);
+  }
+  50% {
+    border: 15px solid lime;
+    transform: scale(1.3);
+  }
+  75% {
+    border: 15px solid dodgerblue;
+    transform: scale(1.1);
+  }
+  100% {
+    border: 15px solid purple;
+    transform: scale(1);
+  }
+}
+
+/*  [- Square -] css section  */
+
+.square {
+  border: 5px solid purple;
+  width: 60px;
+  height: 60px;
+  animation-name: square;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Square animation starts here  */
+
+@keyframes square {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    border: 10 solid dodgerblue;
+  }
+  50% {
+    border: 20px solid purple;
+  }
+  75% {
+    border: 40px solid gold;
+  }
+  100% {
+    border: 5px solid red;
+    transform: rotate(180deg);
+  }
+}
